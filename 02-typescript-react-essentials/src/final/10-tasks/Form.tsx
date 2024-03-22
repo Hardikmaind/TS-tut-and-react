@@ -6,7 +6,7 @@ type FormProps = {
 };
 
 function Form({ addTask }: FormProps) {
-  const [text, setText] = useState('');
+  const [text, setText] = useState<number | string | ''>('');
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
